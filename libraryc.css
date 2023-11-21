@@ -1,0 +1,38 @@
+.c1{
+	color:red;
+	background: white;
+	border:2px red solid;
+	padding:5px;
+	text-transform: uppercase;
+
+	
+}
+body{
+	color:black;
+	background: pink;
+
+}
+.button:hover{
+	background: red;
+	color:white;
+	font-size:50;
+}
+.block{
+	border:3px red solid  ;
+	height:407px;
+}
+h3{
+		margin-left: 30px;
+}
+h2{
+	text-decoration: underline;
+	color:green;
+	}
+
+.box {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
