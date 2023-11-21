@@ -1,0 +1,89 @@
+
+<html lang="en">
+<head>
+    <title>Online hospital  Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: yellow;
+            color: black;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color:yellow;
+            border-radius: 8px;
+            
+        }
+
+        form {
+            display: grid;
+            gap: 1em;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            
+            color: black;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online hospital Appointment</h1>
+    </header>
+    <main>
+        <form>
+            <label for="serviceName">Select problem:</label>
+            <select id="serviceName" name="serviceName" required>
+                <option value="fever>fever</option>
+                <option value="hair">hair</option>
+                <option value="emergency">emergency</option>
+                <option value="skin">skinoption>
+         
+            </select>
+
+            <label for="appointmentDate">Select Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Select Time:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <label for="clientName">Your Name:</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" required>
+            <small>Format: 1234567890</small>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </main>
+</body>
+</html>
