@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake Booking System</title>
+    <style>
+       
+        
+
+        header {
+            background-color: red;
+           
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+          
+        }
+
+        form {
+            display: grid;
+            gap: 1em;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button {
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Cake Booking System</h1>
+    </header>
+    <main>
+        <form>
+            <label for="cakeType">Cake Type:</label>
+            <select id="cakeType" name="cakeType" required>
+                <option value="birthday">Birthday Cake</option>
+                <option value="wedding">Wedding Cake</option>
+                <option value="anniversary">Anniversary Cake</option>
+            </select>
+
+            <label for="flavor">Flavor:</label>
+            <input type="text" id="flavor" name="flavor" required>
+
+            <label for="size">Size:</label>
+            <input type="text" id="size" name="size" required>
+
+            <label for="deliveryDate">Delivery Date:</label>
+            <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </main>
+</body>
+</html>
