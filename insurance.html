@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Insurance Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+          
+        }
+
+        form {
+            display: grid;
+            gap: 1em;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Insurance Management System</h1>
+    </header>
+    <main>
+        <form>
+            <label for="insuranceType">Insurance Type:</label>
+            <select id="insuranceType" name="insuranceType" required>
+                <option value="life">Life Insurance</option>
+                <option value="health">Health Insurance</option>
+                <option value="auto">Auto Insurance</option>
+              
+            </select>
+
+            <label for="policyHolder">Policy Holder:</label>
+            <input type="text" id="policyHolder" name="policyHolder" required>
+
+            <label for="coverageAmount">Coverage Amount:</label>
+            <input type="number" id="coverageAmount" name="coverageAmount" required>
+
+            <label for="premiumAmount">Premium Amount:</label>
+            <input type="number" id="premiumAmount" name="premiumAmount" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
