@@ -1,0 +1,11 @@
+.c1{
+	color:red;
+	background: white;
+	border:2px red solid;
+	padding:10px;
+	text-transform: uppercase;
+}
+body{
+	color:black;
+	background:yellow;
+}
